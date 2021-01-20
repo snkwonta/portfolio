@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css"/>
+    <script src="scramble.js"></script>
+    
+    <!-- <script type="text/javascript" src="scramble.js"></script> -->
+    <title>Portfolio</title>
+  </head>
+
+
+  <body>
+
+    <Grid className="landing-grid">
+        <Cell col={12}>
+            <img src="IMG_1117.jpg" height="250px" style="vertical-align:top" class="center">
+            <div class="typewriter">
+                <h1>Aspiring Web Developer</h1>
+                <div class="container">
+                    <div class="text"></div>
+                  </div> 
+
+
+
+                  <div class="socialLinks">
+                    <a href="https://github.com/snkwonta" target="_blank">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sody-nkwonta-40aa7813a/" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- <div class="socialLinks">
+                <a href="https://github.com/snkwonta" target="_blank">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sody-nkwonta-40aa7813a/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </div> -->
+
+        </Cell>
+    </Grid>
+
+    <!-- <img src="IMG_1117.jpg" height="250px" style="vertical-align:top">
+    <div class="typewriter">
+        <h1>Aspiring Web Developer</h1>
+        <div class="container">
+            <div class="text"></div>
+          </div> 
+    </div>
+
+    <div class="socialLinks">
+        <a href="https://github.com/snkwonta" target="_blank">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sody-nkwonta-40aa7813a/" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+    </div> -->
+
+    <script>
+        const phrases = ['HTML/CSS | Java | Python | JavaScript']
+
+        const el = document.querySelector('.text');
+        const fx = new TextScramble(el);
+        let counter = 0;
+
+        const next = () =>{
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800);
+
+            });
+            counter = (counter +1) % phrases.length;
+        };
+
+        next();
+    </script>
+
+
+  </body>
+</html>

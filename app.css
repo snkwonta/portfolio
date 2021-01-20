@@ -1,0 +1,93 @@
+/* GLOBAL STYLES */
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .typewriter{
+    background-color: black;
+    opacity: .8;
+    width: 75;
+    margin: auto;
+    border-radius: 10px;
+  
+  }
+  
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+  html, body{
+    font-family: 'Roboto Mono', monospace;
+    background: #212121;
+
+  }
+  .container{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .text{
+    font-weight: 100;
+    font-size: 28px;
+    color: #FAFAFA;
+  }
+  .dud{
+    color: #757575;
+  }
+
+  .landing-grid{
+    background-color: #0000;
+    text-align: center;
+    /* padding: 0;
+    align-items: center;
+    font-family: consolas;
+    height: 100vh;
+    display: flex;
+    justify-content: center; */
+  }
+
+    .socialLinks{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    }
+
+    .socialLinks i{
+    color: black;
+    font-size: 5em;
+    padding: 8px;
+    }
