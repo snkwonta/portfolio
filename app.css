@@ -13,7 +13,7 @@ body {
   }
 
   .typewriter{
-    background-color: black;
+    background-color: honeydew;
     opacity: .8;
     width: 75;
     margin: auto;
@@ -23,8 +23,10 @@ body {
   
   /* DEMO-SPECIFIC STYLES */
   .typewriter h1 {
-    color: #fff;
-    font-family: monospace;
+    text-align: center;
+    color: black;
+    font-family: Avenir Black;
+    font-size: 42px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -63,7 +65,7 @@ body {
   .text{
     font-weight: 100;
     font-size: 28px;
-    color: #FAFAFA;
+    color: black;
   }
   .dud{
     color: #757575;
@@ -84,10 +86,12 @@ body {
     display: flex;
     width: 50%;
     margin: auto;
+    align-items: center;
     }
 
     .socialLinks i{
     color: black;
     font-size: 5em;
-    padding: 8px;
+    padding: 10px;
+    
     }
